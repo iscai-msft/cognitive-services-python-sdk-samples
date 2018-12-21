@@ -8,6 +8,7 @@ from msrest.authentication import CognitiveServicesCredentials
 SUBSCRIPTION_KEY_ENV_NAME = "TEXTANALYTICS_SUBSCRIPTION_KEY"
 TEXTANALYTICS_LOCATION = os.environ.get("TEXTANALYTICS_LOCATION", "westcentralus")
 
+
 def language_extraction(subscription_key):
     """Language extraction.
 
@@ -38,6 +39,7 @@ def language_extraction(subscription_key):
 
     except Exception as err:
         print("Encountered exception. {}".format(err))
+
 
 def key_phrases(subscription_key):
     """Key-phrases.
@@ -121,6 +123,7 @@ def sentiment(subscription_key):
 
     except Exception as err:
         print("Encountered exception. {}".format(err))
+
 
 def entity_extraction(subscription_key):
     """EntityExtraction.
